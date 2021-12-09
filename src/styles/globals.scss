@@ -1,2 +1,20 @@
 @import '@/styles/variables.scss';
 
+h1,
+h2, 
+h3,
+h4 {
+    font-family: 'Vollkorn', serif;
+}
+
+// UTILITIES 
+
+.site-lg-container  {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pointed::after {
+content: '.';
+color: $orange;
+}

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :navList="headerMenu"/>
 
     <Main />
 
@@ -23,7 +23,20 @@ export default {
     Main, 
     Footer,
     
-  }
+  }, 
+  data() {
+    return {
+      headerMenu: [
+        'Homes',
+        'Pages',
+        'Blog',
+        'Shop',
+        'Events', 
+        'Elements',
+
+      ],
+    }
+  },
 }
 </script>
 
