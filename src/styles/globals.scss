@@ -9,9 +9,18 @@ h4 {
 
 // UTILITIES 
 
+.h700 {
+    height: 700px;
+}
+
+.h500 {
+    height: 500px;
+}
+
 .site-lg-container  {
     width: 90%;
     margin: 0 auto;
+    padding: 0 .5rem;
 }
 
 .pointed::after {
@@ -33,6 +42,7 @@ color: $orange;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
+    cursor: pointer;
     div {
         display: flex;
         align-content: center;
@@ -58,4 +68,8 @@ color: $orange;
 .site-btn-orange {
     background: $orange;
     color: $white;
+}
+
+.subtitle {
+    color: $subtitle;
 }

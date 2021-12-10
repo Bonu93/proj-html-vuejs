@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex flex-column">
+  <header class="d-flex flex-column h700">
       <div class="top-header site-lg-container py-3 d-flex justify-content-between align-items-center">
           <h1 class="pointed">Everlead</h1>
 
@@ -36,7 +36,7 @@
                           <div class="col-6">
 
                             <h2 class="pointed">Our Team</h2>
-                            <p>
+                            <p class="subtitle">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem dolor obcaecati deserunt quam ut beatae recusandae ratione enim iure perspiciatis quod eligendi dicta quae eum ullam cupiditate, aspernatur exercitationem.
                             </p>
                             <div class="cta d-flex">
@@ -88,7 +88,6 @@ export default {
 @import '@/styles/globals.scss';
 
 header {
-    height: 700px;
     background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
     background-size: cover;
     background-position-y: 50%;
