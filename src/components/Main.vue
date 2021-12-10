@@ -106,7 +106,9 @@
             </div>
         </section>
         <!-- COACHING-CALENDAR SECTION -->
-        <section class="h700 coaching d-flex justify-content-center align-items-center">
+        <section
+            class="h700 coaching d-flex justify-content-center align-items-center"
+        >
             <div class="container d-flex justify-content-center">
                 <div class="row w-75">
                     <div class="col-5">
@@ -118,7 +120,9 @@
                                 <div class="date text-center">
                                     <span class="day">07</span> Jan, 2022
                                 </div>
-                                <div class="event-details d-flex flex-column mx-3">
+                                <div
+                                    class="event-details d-flex flex-column mx-3"
+                                >
                                     <h4>Melbourne Coaching</h4>
                                     <div class="time">
                                         <span class="subtitle">
@@ -137,7 +141,9 @@
                                 <div class="date text-center">
                                     <span class="day">07</span> Jan, 2022
                                 </div>
-                                <div class="event-details d-flex flex-column mx-3">
+                                <div
+                                    class="event-details d-flex flex-column mx-3"
+                                >
                                     <h4>Melbourne Coaching</h4>
                                     <div class="time">
                                         <span class="subtitle">
@@ -156,7 +162,9 @@
                                 <div class="date text-center">
                                     <span class="day">07</span> Jan, 2022
                                 </div>
-                                <div class="event-details d-flex flex-column mx-3">
+                                <div
+                                    class="event-details d-flex flex-column mx-3"
+                                >
                                     <h4>Melbourne Coaching</h4>
                                     <div class="time">
                                         <span class="subtitle">
@@ -171,22 +179,26 @@
                                     <a href="#" class="read-more">Read More</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- ROLE SECTION -->
-        <section class="h500  d-flex justify-content-center align-items-center">
-            <div class="container d-flex justify-content-center align-items-center">
+        <section class="h500 d-flex justify-content-center align-items-center">
+            <div
+                class="container d-flex justify-content-center align-items-center"
+            >
                 <div class="row w-75">
                     <div class="col-6">
                         <h3 class="pointed">Creative Leader</h3>
-                        <hr class="orange-rule">
+                        <hr class="orange-rule" />
                         <p class="subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, laudantium quaerat nisi fugit ad quae temporibus sunt alias itaque illo velit vitae sed natus, libero, explicabo necessitatibus ipsa ducimus iure!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sint, laudantium quaerat nisi fugit ad quae
+                            temporibus sunt alias itaque illo velit vitae sed
+                            natus, libero, explicabo necessitatibus ipsa ducimus
+                            iure!
                         </p>
                         <a href="#" class="read-more">READ MORE</a>
                     </div>
@@ -222,6 +234,69 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- NEWS SECTION -->
+        <section class="news h700 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="pointed">Latest News</h2>
+            <span class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <hr class="orange-rule">
+            <div class="slider site-lg-container d-flex">
+                <button class="slider-btn left-arrow">&#10229;</button>
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="row w-75">
+                       <div class="col-4">
+                           <div class="news-card">
+                               <div class="news-image">
+                                   <img src="../assets/img/h1-blog-img-02.jpg" alt="blog-thumb">
+                               </div>
+                               <div class="news-info">
+                                   <span class="subtitle">May 5, 2019</span>
+                                   <span class="subtitle">Amanda Doe</span>
+                               </div>
+                               <h3>Next investment</h3>
+                               <p class="subtitle">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dicta dolores ipsum tempora corporis, quod, consequatur, sequi odit tempore officiis alias blanditiis corrupti molestiae temporibus expedita accusamus quas quidem molestias.
+                               </p>
+                               <a href="#" class="read-more">Read More</a>
+                           </div>
+                       </div>
+                       <div class="col-4">
+                           <div class="news-card">
+                               <div class="news-image">
+                                   <img src="../assets/img/h1-blog-img-02.jpg" alt="blog-thumb">
+                               </div>
+                               <div class="news-info">
+                                   <span class="subtitle">May 5, 2019</span>
+                                   <span class="subtitle">Amanda Doe</span>
+                               </div>
+                               <h3>Next investment</h3>
+                               <p class="subtitle">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dicta dolores ipsum tempora corporis, quod, consequatur, sequi odit tempore officiis alias blanditiis corrupti molestiae temporibus expedita accusamus quas quidem molestias.
+                               </p>
+                               <a href="#" class="read-more">Read More</a>
+                           </div>
+                       </div>
+                       <div class="col-4">
+                           <div class="news-card">
+                               <div class="news-image">
+                                   <img src="../assets/img/h1-blog-img-02.jpg" alt="blog-thumb">
+                               </div>
+                               <div class="news-info">
+                                   <span class="subtitle">May 5, 2019</span>
+                                   <span class="subtitle">Amanda Doe</span>
+                               </div>
+                               <h3>Next investment</h3>
+                               <p class="subtitle">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dicta dolores ipsum tempora corporis, quod, consequatur, sequi odit tempore officiis alias blanditiis corrupti molestiae temporibus expedita accusamus quas quidem molestias.
+                               </p>
+                               <a href="#" class="read-more">Read More</a>
+                           </div>
+                       </div>
+                    </div>
+
+                </div>
+                <button class="slider-btn right-arrow">&#10230;</button>
             </div>
         </section>
     </main>
@@ -308,7 +383,7 @@ main {
     background-color: $white-alt;
 }
 .coaching {
-    background-image: url('../assets/img/h1-img-09.jpg');
+    background-image: url("../assets/img/h1-img-09.jpg");
     background-position-y: 30%;
     background-size: cover;
     font-size: 12px;
@@ -336,7 +411,7 @@ main {
     }
 }
 
-.calendar-event{
+.calendar-event {
     cursor: pointer;
     &:hover {
         background: white;
@@ -347,7 +422,7 @@ main {
     }
 }
 
-// ROLE SECTION 
+// ROLE SECTION
 
 .bar {
     background: grey;
@@ -367,4 +442,19 @@ main {
         font-size: 1.2rem;
     }
 }
+
+// NEWS SECTION
+.news {
+    h2 {
+        font-size: 3rem;
+    }
+    .news-card {
+        .news-image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 </style>
