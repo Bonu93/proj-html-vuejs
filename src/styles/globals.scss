@@ -7,6 +7,10 @@ h4 {
     font-family: 'Vollkorn', serif;
 }
 
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 // UTILITIES 
 
 .h700 {
@@ -79,4 +83,13 @@ color: $orange;
     width: 70px;
     height: 2px;
     opacity: 1;
+}
+
+.read-more {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black-alt;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 1rem 0;
 }
