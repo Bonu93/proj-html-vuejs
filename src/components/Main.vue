@@ -1,5 +1,6 @@
 <template>
     <main>
+        <!-- SPECS SECTION -->
         <section class="h500">
             <div
                 class="site-lg-container bg-light specs d-flex flex-column justify-content-center align-items-center text-center p-5"
@@ -66,7 +67,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- MEMBERS SECTION -->
         <section class="h500 member">
             <div class="container d-flex justify-content-center">
                 <div class="row w-75 g-0 justify-content-center">
@@ -104,14 +105,52 @@
                 </div>
             </div>
         </section>
-
+        <!-- COACHING-CALENDAR SECTION -->
         <section class="h700 coaching d-flex justify-content-center align-items-center">
             <div class="container d-flex justify-content-center">
                 <div class="row w-75">
                     <div class="col-5">
-                        <div class="calendar d-flex flex-column bg-light">
+                        <div class="calendar d-flex flex-column">
                             <div class="calendar-title p-4">
                                 <h3 class="m-0">Upcoming Events</h3>
+                            </div>
+                            <div class="calendar-event d-flex p-4">
+                                <div class="date text-center">
+                                    <span class="day">07</span> Jan, 2022
+                                </div>
+                                <div class="event-details d-flex flex-column mx-3">
+                                    <h4>Melbourne Coaching</h4>
+                                    <div class="time">
+                                        <span class="subtitle">
+                                            9:00 am - 5:00pm, Jan 7, 2022
+                                        </span>
+                                    </div>
+                                    <div class="location">
+                                        <span class="subtitle">
+                                            Cambridge, MA 02138, USA
+                                        </span>
+                                    </div>
+                                    <a href="#" class="read-more">Read More</a>
+                                </div>
+                            </div>
+                            <div class="calendar-event d-flex p-4">
+                                <div class="date text-center">
+                                    <span class="day">07</span> Jan, 2022
+                                </div>
+                                <div class="event-details d-flex flex-column mx-3">
+                                    <h4>Melbourne Coaching</h4>
+                                    <div class="time">
+                                        <span class="subtitle">
+                                            9:00 am - 5:00pm, Jan 7, 2022
+                                        </span>
+                                    </div>
+                                    <div class="location">
+                                        <span class="subtitle">
+                                            Cambridge, MA 02138, USA
+                                        </span>
+                                    </div>
+                                    <a href="#" class="read-more">Read More</a>
+                                </div>
                             </div>
                             <div class="calendar-event d-flex p-4">
                                 <div class="date text-center">
@@ -138,6 +177,52 @@
                 </div>
             </div>
 
+        </section>
+        <!-- ROLE SECTION -->
+        <section class="h500  d-flex justify-content-center align-items-center">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row w-75">
+                    <div class="col-6">
+                        <h3 class="pointed">Creative Leader</h3>
+                        <hr class="orange-rule">
+                        <p class="subtitle">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, laudantium quaerat nisi fugit ad quae temporibus sunt alias itaque illo velit vitae sed natus, libero, explicabo necessitatibus ipsa ducimus iure!
+                        </p>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bar-info d-flex justify-content-between">
+                            <h4>Mentorship</h4>
+                            <h4>78%</h4>
+                        </div>
+                        <div class="bar">
+                            <div class="loaded-bar"></div>
+                        </div>
+                        <div class="bar-info d-flex justify-content-between">
+                            <h4>Education</h4>
+                            <h4>95%</h4>
+                        </div>
+                        <div class="bar">
+                            <div class="loaded-bar"></div>
+                        </div>
+                        <div class="bar-info d-flex justify-content-between">
+                            <h4>Learning</h4>
+                            <h4>65%</h4>
+                        </div>
+                        <div class="bar">
+                            <div class="loaded-bar"></div>
+                        </div>
+                        <div class="bar-info d-flex justify-content-between">
+                            <h4>Motivation</h4>
+                            <h4>83%</h4>
+                        </div>
+                        <div class="bar">
+                            <div class="loaded-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -219,6 +304,9 @@ main {
 
 // COACHING SECTION
 
+.calendar {
+    background-color: $white-alt;
+}
 .coaching {
     background-image: url('../assets/img/h1-img-09.jpg');
     background-position-y: 30%;
@@ -226,6 +314,7 @@ main {
     font-size: 12px;
     .calendar-title {
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        background: $white-alt;
     }
     h4 {
         font-size: 1.2rem;
@@ -233,8 +322,13 @@ main {
     .date {
         background: $orange;
         color: white;
-        height: 50%;
-        padding: .5rem;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
         .day {
             display: block;
             font-size: 1rem;
@@ -245,10 +339,32 @@ main {
 .calendar-event{
     cursor: pointer;
     &:hover {
+        background: white;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
         h4 {
             color: $orange;
         }
     }
 }
 
+// ROLE SECTION 
+
+.bar {
+    background: grey;
+    height: 1px;
+    margin-bottom: 1rem;
+    .loaded-bar {
+        background: $orange;
+        height: 3px;
+        width: 78%;
+        position: relative;
+        top: -2px;
+    }
+}
+
+.bar-info {
+    h4 {
+        font-size: 1.2rem;
+    }
+}
 </style>
