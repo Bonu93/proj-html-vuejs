@@ -21,8 +21,13 @@ html body {
     height: 500px;
 }
 
+.h400 {
+    height: 400px;
+}
+
 .site-lg-container  {
     width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 .5rem;
 }
