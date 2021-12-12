@@ -461,10 +461,21 @@
             <div class="container d-flex justify-content-center">
                 <div class="row w-75">
                     <div class="col-6 d-flex justify-content-center align-items-center">
-                        <img
-                            src="../assets/img/h1-contact-rev-01.png"
-                            alt="map"
-                        />
+                        <div class="map">
+                            <img
+                                src="../assets/img/h1-contact-rev-01.png"
+                                alt="map"
+                            />
+                            <div class="pointer-1">
+                                <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                            </div>
+                            <div class="pointer-2">
+                                <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                            </div>
+                            <div class="pointer-3">
+                                <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6">
                         <h2 class="pointed">Contact us</h2>
@@ -473,26 +484,28 @@
                             elit.
                         </span>
                         <hr class="orange-rule" />
-                        <form action="message">
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Your Name"
-                            />
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="Your Email"
-                            />
+                        <form action="message" class="message">
+                            <div class="d-flex">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Your Name"
+                                />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Your Email"
+                                />
+
+                            </div>
                             <textarea
                                 name=""
                                 id=""
-                                cols="30"
-                                rows="10"
+                                rows="2"
                                 placeholder="Write your message"
                             ></textarea>
                             <div class="site-btn site-btn-orange">
-                                <div class="btn-txt">Purchase</div>
+                                <div class="btn-txt">Send</div>
                                 <div class="btn-arrow">&#10230;</div>
                             </div>
                         </form>
@@ -773,8 +786,56 @@ main {
 //MAP SECTION
 
 .map {
+    position: relative;
+    .pointer-1 {
+        position: absolute;
+        top: 90px;
+        left: 103px;
+    }
+    .pointer-2 {
+        position: absolute;
+        top: 48px;
+        left: 234px;
+    }
+    .pointer-3 {
+        position: absolute;
+        top: 178px;
+        left: 379px;
+    }
     img {
         width: 100%;
     }
+    .pointer-1,
+    .pointer-2,
+    .pointer-3 {
+        img {
+            width: 20px;
+        }
+    }
+}
+
+//FORM
+
+.message {
+    input,
+    textarea {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid grey;
+        outline: none;
+    }
+    input {
+        width: 50%;
+        // margin: 1rem;
+    }
+    textarea {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #email {
+        margin-left: 1rem;
+    }
 }
 </style>
+
+
