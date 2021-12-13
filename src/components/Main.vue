@@ -1,72 +1,8 @@
 <template>
     <main>
-        <!-- SPECS SECTION -->
-        <section class="h500">
-            <div
-                class="site-lg-container specs d-flex flex-column justify-content-center align-items-center text-center p-5"
-            >
-                <div
-                    class="container d-flex flex-column justify-content-center align-items-center"
-                >
-                    <h2 class="pointed">Our specialities</h2>
-                    <span class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi, praesentium?
-                    </span>
-                    <hr class="orange-rule" />
-                    <div class="row justify-content-center g-0 w-75">
-                        <div class="col-3">
-                            <div
-                                class="spec-card d-flex flex-column justify-content-center"
-                            >
-                                <img src="../assets/svg/svg-0.svg" alt="icon" />
-                                <h4>Knowing</h4>
-                                <span class="subtitle">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div
-                                class="spec-card d-flex flex-column justify-content-center"
-                            >
-                                <img src="@/assets/svg/svg-0.svg" alt="icon" />
-                                <h4>Knowing</h4>
-                                <span class="subtitle">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div
-                                class="spec-card d-flex flex-column justify-content-center"
-                            >
-                                <img src="@/assets/svg/svg-0.svg" alt="icon" />
-                                <h4>Knowing</h4>
-                                <span class="subtitle">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div
-                                class="spec-card d-flex flex-column justify-content-center"
-                            >
-                                <img src="@/assets/svg/svg-0.svg" alt="icon" />
-                                <h4>Knowing</h4>
-                                <span class="subtitle">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- SPECIALITIES SECTION -->
+        <Specs :data="data"/>
+        
         <!-- MEMBERS SECTION -->
         <section class="h500 member d-flex justify-content-center">
             <div class="container d-flex justify-content-center">
@@ -115,86 +51,7 @@
             <div class="container d-flex justify-content-center">
                 <div class="row w-75">
                     <div class="col-5">
-                        <div class="calendar d-flex flex-column">
-                            <div class="calendar-title p-4">
-                                <h3 class="m-0">Upcoming Events</h3>
-                            </div>
-                            <div class="calendar-event d-flex p-4">
-                                <div class="date text-center">
-                                    <span class="day">07</span> Jan, 2022
-                                </div>
-                                <div
-                                    class="event-details d-flex flex-column mx-3"
-                                >
-                                    <h4>Melbourne Coaching</h4>
-                                    <div class="time">
-                                        <span class="subtitle">
-                                            <i class="far fa-clock"></i> 9:00 am
-                                            - 5:00pm, Jan 7, 2022
-                                        </span>
-                                    </div>
-                                    <div class="location">
-                                        <span class="subtitle">
-                                            <i
-                                                class="fas fa-map-marker-alt"
-                                            ></i>
-                                            Cambridge, MA 02138, USA
-                                        </span>
-                                    </div>
-                                    <a href="#" class="read-more">Read More</a>
-                                </div>
-                            </div>
-                            <div class="calendar-event d-flex p-4">
-                                <div class="date text-center">
-                                    <span class="day">07</span> Jan, 2022
-                                </div>
-                                <div
-                                    class="event-details d-flex flex-column mx-3"
-                                >
-                                    <h4>Melbourne Coaching</h4>
-                                    <div class="time">
-                                        <span class="subtitle">
-                                            <i class="far fa-clock"></i> 9:00 am
-                                            - 5:00pm, Jan 7, 2022
-                                        </span>
-                                    </div>
-                                    <div class="location">
-                                        <span class="subtitle">
-                                            <i
-                                                class="fas fa-map-marker-alt"
-                                            ></i>
-                                            Cambridge, MA 02138, USA
-                                        </span>
-                                    </div>
-                                    <a href="#" class="read-more">Read More</a>
-                                </div>
-                            </div>
-                            <div class="calendar-event d-flex p-4">
-                                <div class="date text-center">
-                                    <span class="day">07</span> Jan, 2022
-                                </div>
-                                <div
-                                    class="event-details d-flex flex-column mx-3"
-                                >
-                                    <h4>Melbourne Coaching</h4>
-                                    <div class="time">
-                                        <span class="subtitle">
-                                            <i class="far fa-clock"></i> 9:00 am
-                                            - 5:00pm, Jan 7, 2022
-                                        </span>
-                                    </div>
-                                    <div class="location">
-                                        <span class="subtitle">
-                                            <i
-                                                class="fas fa-map-marker-alt"
-                                            ></i>
-                                            Cambridge, MA 02138, USA
-                                        </span>
-                                    </div>
-                                    <a href="#" class="read-more">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                       <Calendar :data="data"/>
                     </div>
                 </div>
             </div>
@@ -220,36 +77,9 @@
                         <a href="#" class="read-more">READ MORE</a>
                     </div>
 
-                    <div class="col-6">
-                        <div class="bar-info d-flex justify-content-between">
-                            <h4>Mentorship</h4>
-                            <h4>78%</h4>
-                        </div>
-                        <div class="bar">
-                            <div class="loaded-bar"></div>
-                        </div>
-                        <div class="bar-info d-flex justify-content-between">
-                            <h4>Education</h4>
-                            <h4>95%</h4>
-                        </div>
-                        <div class="bar">
-                            <div class="loaded-bar"></div>
-                        </div>
-                        <div class="bar-info d-flex justify-content-between">
-                            <h4>Learning</h4>
-                            <h4>65%</h4>
-                        </div>
-                        <div class="bar">
-                            <div class="loaded-bar"></div>
-                        </div>
-                        <div class="bar-info d-flex justify-content-between">
-                            <h4>Motivation</h4>
-                            <h4>83%</h4>
-                        </div>
-                        <div class="bar">
-                            <div class="loaded-bar"></div>
-                        </div>
-                    </div>
+                    
+                    <Features :data="data"/>
+                    
                 </div>
             </div>
         </section>
@@ -569,8 +399,21 @@
 </template>
 
 <script>
+import Specs from '@/components/Specs.vue';
+import Calendar from '@/components/Calendar.vue';
+import Features from '@/components/Features.vue';
+
+
 export default {
     name: "Main",
+    props: {
+        data: Object,
+    },
+    components: {
+        Specs,
+        Calendar,
+        Features,
+    }
 };
 </script>
 
@@ -581,31 +424,6 @@ main {
     background: $bg-main;
 }
 
-// SPECS SECTION
-.specs {
-    position: relative;
-    top: -60px;
-    background: $white;
-    h2 {
-        font-size: 3rem;
-    }
-}
-
-.spec-card {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // padding: 30px;
-    h4 {
-        font-size: 1rem;
-    }
-    img {
-        max-width: 100%;
-        object-fit: contain;
-        margin-bottom: 1rem;
-    }
-}
 
 // MEMBERS SECTION
 .member {
@@ -693,42 +511,11 @@ main {
     }
 }
 
-.calendar-event {
-    cursor: pointer;
-    &:hover {
-        background: white;
-        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-        h4 {
-            color: $orange;
-        }
-    }
-    i {
-        color: $orange;
-    }
-}
-
 // ROLE SECTION
 .role {
     background: $white;
 }
-.bar {
-    background: grey;
-    height: 1px;
-    margin-bottom: 1rem;
-    .loaded-bar {
-        background: $orange;
-        height: 3px;
-        width: 78%;
-        position: relative;
-        top: -2px;
-    }
-}
 
-.bar-info {
-    h4 {
-        font-size: 1.2rem;
-    }
-}
 
 // NEWS SECTION
 .news {

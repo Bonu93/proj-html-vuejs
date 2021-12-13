@@ -2,7 +2,9 @@
   <div id="app">
     <Header :navList="headerMenu"/>
 
-    <Main />
+    <Main 
+    :data="mainData"
+    />
 
     <Footer
     :data="footerData"
@@ -37,6 +39,77 @@ export default {
         'Elements',
 
       ],
+
+      mainData: {
+        specsData: [
+          {
+            title: 'Knowing',
+            img: 'svg-0.svg',
+            text: 'Lorem ipsum dolor sit amet, quis consect'
+          },
+          {
+            title: 'Selling',
+            img: 'svg-1.svg',
+            text: 'Lorem ipsum dolor sit amet, quis consect'
+          },
+          {
+            title: 'Learning',
+            img: 'svg-2.svg',
+            text: 'Lorem ipsum dolor sit amet, quis consect'
+          },
+          {
+            title: 'Contact',
+            img: 'svg-3.svg',
+            text: 'Lorem ipsum dolor sit amet, quis consect'
+          }
+
+        ],
+
+        calendarData: [
+          {
+            day: '07',
+            date: 'Jan, 2022',
+            name: 'Melbourne Coaching',
+            time: '9:00 am - 5:00pm, Jan 7,2022',
+            location: 'Cambridge, MA 02138, USA'
+          },
+          {
+            day: '11',
+            date: 'Jan, 2022',
+            name: 'New York Coaching',
+            time: '9:00 am - 5:00pm, Jan 11,2022',
+            location: 'Cambridge, MA 02138, USA'
+          },
+          {
+            day: '21',
+            date: 'Jan, 2022',
+            name: 'London Coaching',
+            time: '9:00 am - 5:00pm, Jan 21,2022',
+            location: 'Cambridge, MA 02138, USA'
+          },
+        ],
+
+        roleData: [
+           {
+             feature: 'Mentorship',
+             percentage: '78%'
+           },
+           {
+             feature: 'Education',
+             percentage: '95%'
+           },
+           {
+             feature: 'Learning',
+             percentage: '65%'
+           },
+           {
+             feature: 'Motivation',
+             percentage: '83%'
+           }
+        ],
+
+
+      },
 
       footerData: {
 

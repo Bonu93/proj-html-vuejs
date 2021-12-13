@@ -86,6 +86,9 @@ export default {
 
 footer {
   background: $black-alt;
+  .orange-rule {
+    width: 30px;
+  }
   ul {
     list-style: none;
     h4 {
