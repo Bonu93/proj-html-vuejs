@@ -104,6 +104,9 @@
                     </div>
                 </div>
             </div>
+            <div class="overlay-image">
+                <img src="../assets/svg/svg-4.svg" alt="">
+            </div>
         </section>
         <!-- COACHING-CALENDAR SECTION -->
         <section
@@ -371,6 +374,9 @@
                 </div>
                 <button class="slider-btn right-arrow">&#10230;</button>
             </div>
+            <div class="overlay-image">
+                <img src="../assets/svg/svg-4.svg" alt="">
+            </div>
         </section>
         <!-- TESTIMONIALS SECTION -->
         <section
@@ -513,6 +519,40 @@
                 </div>
             </div>
         </section>
+        <!-- CLIENTS SECTION -->
+        <section class="clients d-flex justify-content-center align-items-center">
+            <div class="container d-flex justify-content-center">
+                <div class="row w-75 g-0">
+                    <div class="col-12 d-flex justify-content-between">
+
+                        <div class="client-img">
+                            <img src="../assets/img/h4-clients-img-03.png" alt="">
+                            <img src="../assets/img/h4-clients-img-04-1.png" alt="">
+                        </div>
+                        <div class="client-img">
+                            <img src="../assets/img/h4-clients-img-05.png" alt="">
+                            <img src="../assets/img/h4-clients-img-06-1.png" alt="">
+                        </div>
+                        <div class="client-img">
+                            <img src="../assets/img/h4-clients-img-07.png" alt="">
+                            <img src="../assets/img/h4-clients-img-08-1.png" alt="">
+                        </div>
+                        <div class="client-img">
+                            <img src="../assets/img/h4-clients-img-09.png" alt="">
+                            <img src="../assets/img/h4-clients-img-10-1.png" alt="">
+                        </div>
+                        <div class="client-img">
+                            <img src="../assets/img/h4-clients-img-01.png" alt="">
+                            <img src="../assets/img/h4-clients-img-02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SCROLLUP BUTTON  -->
+        <div class="scroll-up">
+            <a href="#">&#8593;</a>
+        </div>
     </main>
 </template>
 
@@ -556,6 +596,17 @@ main {
 }
 
 // MEMBERS SECTION
+.member {
+    position: relative;
+    .overlay-image {
+        position: absolute;
+        top: -75px;
+        left: 1000px;
+        img {
+            width: 400px;
+        }
+    }
+}
 
 .member-image {
     position: relative;
@@ -577,6 +628,7 @@ main {
 
 .member-description {
     position: relative;
+    z-index: 1;
     left: -50px;
     top: -15%;
     font-size: 12px;
@@ -668,6 +720,15 @@ main {
 
 // NEWS SECTION
 .news {
+    position: relative;
+    .overlay-image {
+        position: absolute;
+        top: -90px;
+        left: 150px;
+        img {
+            width: 400px;
+        }
+    }
     h2 {
         font-size: 3rem;
     }
@@ -679,6 +740,8 @@ main {
         -webkit-box-orient: vertical;
     }
     .news-card {
+        position: relative;
+        z-index: 1;
         .news-info {
             font-size: 12px;
             .date {
@@ -834,6 +897,50 @@ main {
     }
     #email {
         margin-left: 1rem;
+    }
+}
+
+// CLIENTS SECTION
+.clients {
+    padding: 5rem 0;
+}
+.client-img {
+    cursor: pointer;
+    
+    img {
+        width: 100%;
+        &:last-child {
+            display: none;
+        }
+    }
+    &:hover {
+        & img:first-child {
+            display: none;
+        }
+        & img:last-child {
+            display: inline-block;
+        }
+    }
+}
+
+.scroll-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    a {
+        text-decoration: none;
+        color: $orange;
+        display: block;
+        height: 100%;
+        font-size: 1.5rem;
     }
 }
 </style>
