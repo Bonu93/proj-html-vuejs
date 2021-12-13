@@ -4,7 +4,9 @@
 
     <Main />
 
-    <Footer />
+    <Footer
+    :data="footerData"
+     />
 
   </div>
 </template>
@@ -35,6 +37,61 @@ export default {
         'Elements',
 
       ],
+
+      footerData: {
+
+        footerAbout: {
+          listItem: 'We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success',
+        },
+
+        footerTwitter: [
+          {
+            tweet: '@aliasadam Hi, can you please submit a ticket at https//t.co/lorem and one of our support agent'
+          },
+          {
+            tweet: '@HenrySefa Check out our theme Gioia which has all the necessary elements to build a multivendor marketplace https//t.co/lorem'
+          },
+        ],
+
+        footerLinks: [
+          {
+            text: 'About me',
+            url: '/'
+          },
+          {
+            text: 'About us',
+            url: '/'
+          },
+          {
+            text: 'Language packs',
+            url: '/'
+          },
+          {
+            text: 'Become a coach',
+            url: '/'
+          },
+          {
+            text: 'Monthly events',
+            url: '/'
+          },
+        ],
+
+        footerContacts: [
+          {
+            text: '457 BigBlue Street, NY 10013',
+            icon: 'fas fa-map-marker-alt'
+          },
+          {
+            text: '(315) 5512-2579',
+            icon: 'fas fa-phone-alt',
+          },
+          {
+            text: 'everlead@mikado.com',
+            icon: 'far fa-envelope'
+          }
+        ],
+
+      }
     }
   },
 }

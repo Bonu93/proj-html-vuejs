@@ -474,12 +474,24 @@
                             />
                             <div class="pointer-1">
                                 <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                                <div class="pointer-label">
+                                    <h4>New York Coaching</h4>
+                                    <a href="" class="read-more">Read More</a>
+                                </div>
                             </div>
                             <div class="pointer-2">
                                 <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                                <div class="pointer-label">
+                                    <h4>Oslo Coaching</h4>
+                                    <a href="" class="read-more">Read More</a>
+                                </div>
                             </div>
                             <div class="pointer-3">
                                 <img src="../assets/img/h1-contact-rev-02.png" alt="">
+                                <div class="pointer-label">
+                                    <h4>Adelaide Coaching</h4>
+                                    <a href="" class="read-more">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -871,10 +883,31 @@ main {
     .pointer-1,
     .pointer-2,
     .pointer-3 {
+        cursor: pointer;
         img {
             width: 20px;
         }
+        &:hover {
+            .pointer-label {
+                opacity: 1;
+            }
+        }
     }
+}
+
+.pointer-label {
+    position: relative;
+    top: 10px;
+    left: -30px;
+    padding: 1rem;
+    background: $white-alt;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transition: opacity .5s ease;
+    h4 {
+        margin-bottom: 0;
+    }
+
 }
 
 //FORM
